@@ -5,7 +5,7 @@
  *@c: the paramete that is checked
  *main - Entry
  *
- *Return: 0
+ *Return: 1 when c is an alphabet and 0 when it is not
  */
 
 int _islower(int c)
