@@ -2,7 +2,7 @@
 
 /**
  *main - Entry
- *Return: nothing i.e void
+ *Return: 0
  */
 
 int main(void)
@@ -18,23 +18,25 @@ for (y = 1; y <= 100; y++)
 
 if ((y % 3 == 0) && (y % 5 != 0))
 {
-printf("Fizz ");
-continue;
+printf(" Fizz");
 }
 else if  ((y % 5 == 0) && (y % 3 != 0))
 {
-printf("Buzz ");
-continue;
+printf(" Buzz");
 }
 else if (y % 15 == 0)
 {
-printf("FizzBuzz ");
-continue;
+printf(" FizzBuzz");
 }
+
+else if (y == 1)
+{
+printf("%d", y);
+}
+
 else
-printf("%d ", y);
+printf(" %d", y);
 }
 printf("\n");
 return (0);
 }
-
