@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  *mul - function that multiplies two integers
@@ -10,7 +10,5 @@
 int mul(int a, int b)
 {
 int mul = a * b;
-_putchar(mul / 10 + '0');
-_putchar(mul % 10 + '0');
 return (mul);
 }
