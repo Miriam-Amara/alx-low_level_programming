@@ -27,9 +27,9 @@ _putchar(str[n]);
 else if (l % 2 == 1)
 {
 n = (l - 1) / 2;
-for ( ; str[n] != '\0'; n++)
+for ( ; n < (l - 1); n++)
 {
-_putchar(str[n]);
+_putchar(str[n + 1]);
 }
 }
 _putchar('\n');
