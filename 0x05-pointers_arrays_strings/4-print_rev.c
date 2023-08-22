@@ -8,6 +8,19 @@
 
 void print_rev(char *s)
 {
-  int a;
-  a = ((char *)(&s + 1))[-1]
-}  
+int k;
+int l = 0;
+for (; *s != '\0';)
+{
+l++;
+s++;
+}
+
+s--;
+for (k = l; k > 0; k--)
+{
+_putchar(*s);
+s--;
+}
+_putchar('\n');
+}
