@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	unsigned int a, i, j, k = 0;
+	unsigned long int a, i, j, k = 0;
 
 	i = 1;
 	j = 1;
 	k = 0;
 
-	printf("%d, ", i);
+	printf("%lu, ", i);
 
 	for (a = 1; a < 50; a++)
 	{
@@ -21,9 +21,9 @@ int main(void)
 		j = i;
 		i = j + k;
 		if (a == 49)
-			printf("%u", i);
+			printf("%lu", i);
 		else
-			printf("%u, ", i);
+			printf("%lu, ", i);
 	}
 	putchar('\n');
 
