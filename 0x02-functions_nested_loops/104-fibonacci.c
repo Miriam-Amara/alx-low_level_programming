@@ -15,13 +15,13 @@ int main(void)
 
 	printf("%lu, ", i);
 
-	for (a = 1; a < 100; a++)
+	for (a = 1; a < 99; a++)
 	{
 		k = j;
 		j = i;
 		i = j + k;
 
-		if (a == 99)
+		if (a == 98)
 			printf("%lu", i);
 		else
 			printf("%lu, ", i);
