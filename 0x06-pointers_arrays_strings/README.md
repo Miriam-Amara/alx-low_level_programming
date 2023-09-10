@@ -1,1 +1,1 @@
-First alx project on pointers
+second alx project on pointers
