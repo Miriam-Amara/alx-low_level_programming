@@ -1,38 +1,27 @@
 #include "main.h"
 
 /**
- *print_number - prints an integer
- *
- *@n: the parameter variable
- *Return: void i.e nothing
+ * print_number - prints an integer
+ * @n: integer to be printed
  */
-
 void print_number(int n)
 {
-	int i, digit, reverse = 0;
+	unsigned int n1;
 
 	if (n < 0)
 	{
-		_putchar('-');
-		n = -n;
+	n1 = -n;
+	_putchar('-');
+	}
+	else
+	{
+	n1 = n;
 	}
 
-	if (n == 0)
+	if (n1 / 10)
 	{
-		_putchar('0');
+	print_number(n1 / 10);
 	}
 
-	for (i = 0; n > 0; i++)
-	{
-		digit = n % 10;
-		reverse = (reverse * 10) + digit;
-		n = n / 10;
-	}
-
-	for (i = 0; reverse > 0; i++)
-	{
-		digit = reverse % 10;
-		reverse = reverse / 10;
-		_putchar(digit + '0');
-	}
+	_putchar((n1 % 10) + '0');
 }
